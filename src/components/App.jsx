@@ -6,7 +6,7 @@ import Button from './Button/Button';
 import Modal from './Modal/Modal';
 import Loader from './Loader/Loader';
 import {Container} from './App.styled'
-import { isDocument } from '@testing-library/user-event/dist/utils';
+
 
 
 export default class App extends Component {
@@ -35,7 +35,7 @@ loadImages = async (query, page) => {
     this.setState({isLoading: false});
 
     window.scrollTo({
-      top: isDocument.documentElement.scrollHeight,
+      top: document.documentElement.scrollHeight,
       behavior: 'smooth',
     });
   }

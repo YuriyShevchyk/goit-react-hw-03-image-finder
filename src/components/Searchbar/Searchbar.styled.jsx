@@ -34,7 +34,6 @@ export const SearchFormButton = styled.button`
   width: 48px;
   height: 48px;
   border: 0;
-  
   background-size: 40%;
   background-repeat: no-repeat;
   background-position: center;
