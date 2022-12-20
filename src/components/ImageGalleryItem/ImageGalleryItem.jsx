@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import {
     ImageGalleryItemLi,
     ImageGalleryItemImage,
@@ -19,3 +20,10 @@ import {
       </ImageGalleryItemLi>
     );
   }
+
+ImageGalleryItem.prototype = {
+  webformatURL: PropTypes.string.isRequired,
+  largeImageURL: PropTypes.string.isRequired,
+  tags: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired,
+}  
